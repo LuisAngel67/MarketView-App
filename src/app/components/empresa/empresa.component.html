@@ -1,0 +1,21 @@
+<main class="container mt-5">
+  <div class="card p-4">
+    <h2 class="text-primary">{{ empresa.name }} ({{ empresa.symbol }})</h2>
+    <p><strong>Bolsa:</strong> {{ empresa.stock_exchange?.name }}</p>
+    <p><strong>Acrónimo:</strong> {{ empresa.stock_exchange?.acronym }}</p>
+    <p><strong>Ciudad:</strong> {{ empresa.stock_exchange?.city }}</p>
+
+    <h2 class="text-primary">📈 Información de Mercado</h2>
+    <p><strong>Precio actual:</strong> {{ precio["05. price"] }} USD</p>
+    <p><strong>Máximo del día:</strong> {{ precio["03. high"] }} USD</p>
+    <p><strong>Mínimo del día:</strong> {{ precio["04. low"] }} USD</p>
+    <p><strong>Volumen de operaciones:</strong> {{ precio["06. volume"] }}</p>
+    <p>
+      <strong>Cambio:</strong> {{ precio["09. change"] }} USD ({{
+        precio["10. change percent"]
+      }})
+    </p>
+
+    <a routerLink="/home" class="btn btn-secondary mt-3">Volver a la Lista</a>
+  </div>
+</main>

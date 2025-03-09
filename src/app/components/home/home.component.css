@@ -1,0 +1,67 @@
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #000000;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.company-card {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.company-card:hover {
+  transform: scale(1.02);
+}
+
+.custom-card {
+  background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .custom-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .btn-info {
+    color: white;
+    background-color: #007bff; 
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color: #0056b3;
+  }

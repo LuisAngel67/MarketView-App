@@ -1,0 +1,14 @@
+<main class="container mt-5">
+  <h2 class="text-center text-primary">Lista de Empresas 📈</h2>
+  <div class="row justify-content-center">
+    <div *ngFor="let ticker of tickers" class="col-md-6 col-lg-4">
+      <div class="card shadow-sm p-3 mb-4 custom-card">
+        <h3 class="card-title">{{ ticker.name }}</h3>
+        <p><strong>Símbolo:</strong> {{ ticker.symbol }}</p>
+        <a [routerLink]="['/empresa', ticker.symbol]" class="btn btn-info"
+          >Ver Detalles</a
+        >
+      </div>
+    </div>
+  </div>
+</main>
